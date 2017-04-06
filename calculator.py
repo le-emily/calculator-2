@@ -18,11 +18,11 @@ def tokenize():
             if tokens[0] == "+":
                 print add(tokens[1:])
             elif tokens[0] == "-":
-                print subtract(int(tokens[1]), tokens[2:])
+                print subtract(tokens[1:])
             elif tokens[0] == "*":
-                print multiply(int(tokens[1]), tokens[2:])
+                print multiply(tokens[1:])
             elif tokens[0] == "/":
-                print divide(int(tokens[1]), tokens[2:])
+                print divide(tokens[1:])
             elif tokens[0] == "square":
                 print square(int(tokens[1]))
             elif tokens[0] == "cube":

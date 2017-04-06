@@ -1,35 +1,26 @@
 """Math functions for calculator."""
 
 
-def add(num1):
+def add(num):
     """Return the sum of the two input integers."""
-    total = reduce(lambda x, y: x + int(y), num1)
-    return total
+    return reduce(lambda x, y: int(x) + int(y), num) 
 
-
-def subtract(num1, num2):
+def subtract(num):
     """Return the second number subtracted from the first."""
-    for num in num2:
-        num1 = num1 - int(num)
-    return num1
+    return reduce(lambda x, y: int(x) - int(y), num)
 
 
-def multiply(num1, num2):
+def multiply(num2):
     """Multiply the two inputs together."""
-    for num in num2:
-        num1 = num1 * int(num)
-    return num1
+    return reduce(lambda x, y: int(x) * int(y), num)
 
 
-def divide(num1, num2):
+def divide(num):
     """Divide the first input by the second, returning a floating point."""
-    num1 = float(num1)
-    for num in num2:
-        num1 = num1 / int(num)
-    return num1
+    return reduce(lambda x, y: int(x)/int(y), num)
 
 
-def square(num1):
+def square(num):
     """Return the square of the input."""
 
     # Needs only one argument
